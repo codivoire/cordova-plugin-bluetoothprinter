@@ -1,12 +1,12 @@
 # cordova-plugin-bluetoothprinter
 
-A cordova plugin for bluetooth printer for android platform.
-
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcodivoire%2Fcordova-plugin-bluetoothprinter.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcodivoire%2Fcordova-plugin-bluetoothprinter?ref=badge_shield)
 [![npm version](https://img.shields.io/npm/v/@codivoire/cordova-plugin-bluetoothprinter.svg?style=flat-square)](https://www.npmjs.org/package/@codivoire/cordova-plugin-bluetoothprinter)
 [![npm downloads](https://img.shields.io/npm/dm/@codivoire/cordova-plugin-bluetoothprinter.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@codivoire/cordova-plugin-bluetoothprinter)
 ![Supports Android](https://img.shields.io/badge/platforms-android-lightgrey.svg) 
-![MIT License](https://img.shields.io/npm/l/@codivoire/cordova-plugin-bluetoothprinter.svg)
+![Apache 2.0](https://img.shields.io/npm/l/@codivoire/cordova-plugin-bluetoothprinter.svg)
+
+A cordova plugin for bluetooth printer for android platform.
 
 This code is being adapted from a fork of [Cordova-Plugin-Bluetooth-Printer](https://github.com/srehanuddin/Cordova-Plugin-Bluetooth-Printer), of free use and modifications that will arise for the improvement of the plugin.
 
@@ -51,13 +51,13 @@ cordova plugin add cordova-plugin-bluetoothprinter
 Get list of paired bluetooth devices, including printers, if any:
 
 ```javascript
-BluetoothPrinter.list(function(data){
+BluetoothPrinter.list(function (data) {
   console.log("Success");
-  console.log(data); // paired bluetooth devices array
-},function(err){
+  console.log(data);
+},function (err) {
   console.log("Error");
   console.log(err);
-});
+})
 ```
 
 Returns an array with the format:
@@ -82,7 +82,7 @@ BluetoothPrinter.status(function(data){
 },function(err){
   console.log("Error");
   console.log(err)
-});
+})
 ```
 
 ### Connect printer
@@ -94,7 +94,7 @@ BluetoothPrinter.connect("PrinterName", function(data){
 },function(err){
   console.log("Error");
   console.log(err)
-});
+})
 ```
 
 ### Check if printer is connected
@@ -106,7 +106,7 @@ BluetoothPrinter.isConnected(function(data){
 },function(err){
   console.log("Error");
   console.log(err);
-});
+})
 ```
 
 ### Disconnect printer
@@ -118,7 +118,7 @@ BluetoothPrinter.disconnect("PrinterName", function(data){
 }, function(err){
   console.log("Error");
   console.log(err)
-});
+})
 ```
 
 #### Obs
@@ -312,4 +312,4 @@ CODABAR accepts:
 
 The following sample receipt was printed with the plugin demo app using a generic portable bluetooth printer:
 
-![Receipt](./demo/btplugin-demo-receipt.png.png)
+![Receipt](https://github.com/codivoire/cordova-plugin-bluetoothprinter/raw/master/demo/btplugin-demo-receipt.png)

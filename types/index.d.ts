@@ -16,7 +16,7 @@ interface BluetoothPrinter {
   ): void
 
   list(
-    success: (data: any) => void,
+    success: (data: any[]) => void,
     error: (error: any) => void
   ): void
 
