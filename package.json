@@ -1,0 +1,37 @@
+{
+  "name": "@codivoire/cordova-plugin-bluetoothprinter",
+  "version": "1.0.0",
+  "description": "A cordova plugin for Bluetooth printer for android platform.",
+  "license": "Apache 2.0",
+  "types": "./types/index.d.ts",
+  "cordova": {
+    "id": "cordova-plugin-bluetoothprinter",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "bluetooth",
+    "printer",
+    "pos",
+    "text",
+    "barcode",
+    "image",
+    "base64",
+    "qrcode",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codivoire/cordova-plugin-bluetoothprinter.git"
+  },
+  "author": {
+    "name": "Codivoire",
+    "email": "info.codivoire@gmail.com",
+    "url": "https://codivoire.github.io/"
+  },
+  "bugs": "https://github.com/codivoire/cordova-plugin-bluetoothprinter.git/issues",
+  "homepage": "https://github.com/codivoire/cordova-plugin-bluetoothprinter#readme"
+}
